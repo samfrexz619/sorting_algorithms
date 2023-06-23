@@ -24,5 +24,7 @@ void bubble_sort(int *array, size_t size)
 				swap = 1;
 			}
 		}
+		if (swap == 0)
+			break;
 	}
 }
