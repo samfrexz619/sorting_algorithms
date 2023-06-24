@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  * bubble_sort - function that sorts an arr
  * @array: input arr
@@ -8,11 +9,11 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t idx, num;
-	int tmp, swap;
+	int tmp, swp;
 
-	for (num = size, swap = 1; num > 0 && swap; num--)
+	for (num = size, swp = 1; num > 0 && swp; num--)
 	{
-		swap = 0;
+		swp = 0;
 		for (idx = 0; (idx + 1) < num; idx++)
 		{
 			if (array[idx] > array[idx + 1])
@@ -21,10 +22,10 @@ void bubble_sort(int *array, size_t size)
 				array[idx + 1] = array[idx];
 				array[idx] = tmp;
 				print_array(array, size);
-				swap = 1;
+				swp = 1;
 			}
 		}
-		if (swap == 0)
+		if (swp == 0)
 			break;
 	}
 }
