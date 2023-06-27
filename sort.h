@@ -26,4 +26,6 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void _sorting(int *arr, int lw, int hgh, int size);
+void shell_sort(int *array, size_t size);
+void _shells(int *arr, int size, int num);
 #endif
